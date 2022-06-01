@@ -10,6 +10,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
     
 }
 .container2 {
@@ -21,4 +23,10 @@
 .card {
     border: solid;
     box-shadow: 8px 3px 3px rgb(114, 112, 112);;
+}
+.text-prin{
+    margin-left: 40px;
+}
+#body{
+    font-family: 'Times New Roman', Times, serif;
 }
