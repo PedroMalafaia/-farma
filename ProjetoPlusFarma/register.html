@@ -16,6 +16,17 @@
             <div class="form-box">
                 <h2>Registar</h2>
                 <form>
+                    <div class="input-box">
+                        <div><label>Nome e sobrenome</label></div>
+                        <input type="text" placeholder="Nome"
+                            onchange="onChangeName()" id="name"/>
+                        <input type="text" placeholder="sobrenome"
+                            onchange="onChangeSurname()" id="surname"/>
+                        <div class="error" id="email-required-error">
+                            O nome e sobrenome são obrigatórios
+                        </div>
+                        
+                    </div>
         <div class="input-box">
             <div><label>Email</label></div>
             <input type="email" placeholder="seu@email.com"
@@ -46,12 +57,12 @@
             </div>
         </div>
         <div>
-            <button type="button" class="solid" disabled="true" id="register-button">
+            <button type="button" class="solid" id="register-button">
                 Registrar
             </button>
         </div>
         <div>
-            <button type="button" class="clear">Login</button>
+            <a href="../ProjetoPlusFarma/login.html"><button type="button" class="clear">Login</button></a>
         </div>
     </form>
             </div>

@@ -1,3 +1,13 @@
+function onChangeName() {
+    const name = form.name().value;
+    form.nameRequiredError().style.display = name ? "none" : "block";
+    toggleRegisterButtonDisable();
+}
+function onChangeSurname() {
+    const surname = form.surname().value;
+    form.surnameRequiredError().style.display = surname ? "none" : "block";
+    toggleRegisterButtonDisable();
+}
 function onChangeEmail() {
     const email = form.email().value;
     form.emailRequiredError().style.display = email ? "none" : "block";
