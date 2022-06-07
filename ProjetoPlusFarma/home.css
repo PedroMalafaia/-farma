@@ -145,7 +145,7 @@
     color: #a9adb6;
 }
 
-.content-box .form-box .input-box input[type=submit] {
+.content-box .form-box .input-box input[type=button] {
     background: #4aa4ee;
     color: #fff;
     outline: none;
@@ -200,3 +200,76 @@
 #buttoentrar{
     background-color: #4aa4ee;
 }
+
+/* GLOBAL.CSS*/
+
+
+.centralize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.form-field {
+    margin-bottom: 10px;
+}
+
+input,
+button {
+   padding: 10px;
+   width: -webkit-fill-available;
+}
+
+.loading {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+.loading label {
+    font-size: 24px;
+}
+
+button {
+    cursor: pointer;
+}
+button:active {
+    opacity: 0.8;
+}
+button[disabled] {
+    opacity: 0.8;
+}
+
+.clear {
+    background: #4aa4ee;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.solid {
+    margin-top: 30px;
+    background: #4aa4ee;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.outline {
+    background: transparent;
+    color: rgb(0, 0, 0);
+    border: 1px solid white;
+}
+
+.error {
+    background: red;
+    color: white;
+    display: none;
+} 

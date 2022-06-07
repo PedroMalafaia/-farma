@@ -14,7 +14,7 @@ function login() {
         form.email().value, form.password().value
     ).then(() => {
         hideLoading();
-        window.location.href = "pages/home/home.html";
+        window.location.href = "C:\PlusFarma-1\ProjetoPlusFarma\index.html";
     }).catch(error => {
         hideLoading();
         alert(getErrorMessage(error));
@@ -32,7 +32,7 @@ function getErrorMessage(error) {
 }
 
 function register() {
-    window.location.href = "pages/register/register.html";
+    window.location.href = "../ProjetoPlusFarma/register.html";
 }
 
 function recoverPassword() {
