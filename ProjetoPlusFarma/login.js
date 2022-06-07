@@ -87,3 +87,11 @@ const form = {
     passwordRequiredError: () => document.getElementById("password-required-error"),
     recoverPasswordButton: () => document.getElementById("recover-password-button"),
 } 
+function mostrarSenha(){
+    var tipo = document.getElementById("password")
+    if (tipo.type == "password") {
+        tipo.type = "text";
+    }else{
+        tipo.type = "password";
+    }
+}
