@@ -28,6 +28,18 @@ function getErrorMessage(error) {
     if (error.code == "auth/wrong-password"){
         return "Senha incorreta";
     }
+    if(error.code =="auth/internal-error"){
+        return "É necessario inserir a senha";
+    }
+    if(error.code =="auth/invalid-email"){
+        return "É necessario inserir um email ";
+    }
+    if(error.code =="auth/missing-email"){
+        return "É necessario inserir um email ";
+    }
+    else{
+        return "Email enviado com sucesso!"
+    }
     return error.message;
 }
 

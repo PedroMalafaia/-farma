@@ -22,13 +22,10 @@
                         <div class="input-box">
                             <div><label>Email</label></div>
                             <input type="email" name="email" id="email" placeholder="seu@email.com" onchange="onChangeEmail()"/>
-                            <div class="error" id="email-required-error">O Email é obrigatório</div>
-                            <div class="error" id="email-invalid-error">Email  inválido</div>
                         </div>
                         <div class="input-box">
                             <div><label>Senha</label></div>
                             <input type="password" name="password" id="password" placeholder="Senha" onchange="onChangePassword()"/>
-                            <div class="error" id="password-required-error">Senha  obrigatória</div>
                         </div>
                         <div>
                             <p>Não possui cadastro? <a href="../ProjetoPlusFarma/register.html">Inscrever-se</a></p>
@@ -37,10 +34,10 @@
                              <p>Continar sem cadastro? <a href="../ProjetoPlusFarma/index.html"> clique aqui</a></p>
                         </div>
                         <div>
-                            <button type="button" class="solid" id="login-button"  disabled="true" onclick="login()">Entrar</button>
+                            <button type="button" class="solid" id="login-button" onclick="login()">Entrar</button>
                         </div>
                         <div>
-                            <button type="button" class="clear" id="recover-password-button" onclick="recoverPassword()" disabled="true">Recuperar senha</button>
+                            <a href="../ProjetoPlusFarma/RecSenha.html"><button type="button" class="clear">Recuperar senha</button></a>
                         </div>
                         
                         

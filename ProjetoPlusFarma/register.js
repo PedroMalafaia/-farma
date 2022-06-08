@@ -74,19 +74,3 @@ const form = {
     passwordRequiredError: () => document.getElementById('password-required-error'),
     registerButton: () => document.getElementById('register-button')
 }
-function mostrarSenha(){
-    var tipo = document.getElementById("password")
-    if (tipo.type == "password") {
-        tipo.type = "text";
-    }else{
-        tipo.type = "password";
-    }
-}
-function mostrarSenha(){
-    var tipo = document.getElementById("confirmPassword")
-    if (tipo.type == "password") {
-        tipo.type = "text";
-    }else{
-        tipo.type = "password";
-    }
-}
