@@ -1,7 +1,25 @@
 // importando o nosso express
 const express = require('express')
+//const { ObjectId } = require("mongodb");
 const app = express()
-const port = 3000
+
+app.use(express.urlencoded({extended:true}))
+
+
+// conectando o banco de dados
+
+//const MongoClient =require('mongodb').MongoClient
+//const uri = "mongodb+srv://dbUser:dbUser@cluster0.tncqtcx.mongodb.net/?retryWrites=true&w=majority"
+
+/*MongoClient.connect(uri,(err, client) =>{
+    if(err) return console.log(err)
+    db = client.db('teste-db')
+
+    app.listen(3000 , () =>{
+        console.log("rodando safe")
+    })
+})*/
+
 
 // static file
 app.use(express.static('public'))
@@ -26,13 +44,29 @@ app.get('/register', (req,res) =>{
     res.render('register')
 })
 
+app.post('/show',(req,res)=>{
+    console.log(req.body)
+})
 
+/*app.get('/', (req,res) =>{
+    let cursor = db.collection('crud').find()
+})
+
+app.post('/register',(req,res) =>{
+    db.collection("crud").insertOne(req.body,(err,result) => {
+        if(err) return console.log(err)
+        console.log("salvou no nosso banco")
+        res.redirect("/register")
+        db.collection("crud").find().toArray((err,results)=>{
+            console.log(results)
+        })
+    })
+})*/
 
 
 //permitir servidor se comunicar com o navegador
-app.listen(port, function(){
-    console.log('porta 3000')
+
+app.listen(5000 , function(){
+    console.log("rodando safe")
 })
-
-
 
